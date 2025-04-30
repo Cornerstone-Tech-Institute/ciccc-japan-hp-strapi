@@ -36,15 +36,15 @@
         "images"
       ]
     },
+    "date": {
+      "type": "date",
+      "required": true
+    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
-      "inversedBy": "articles"
-    },
-    "date": {
-      "type": "date",
-      "required": true
+      "mappedBy": "articles"
     }
   }
 }

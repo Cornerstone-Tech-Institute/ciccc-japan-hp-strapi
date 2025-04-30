@@ -106,10 +106,6 @@ export interface ElementsPlan extends Struct.ComponentSchema {
     name: Schema.Attribute.String;
     price: Schema.Attribute.Decimal;
     pricePeriod: Schema.Attribute.String;
-    product_features: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::product-feature.product-feature'
-    >;
   };
 }
 
@@ -135,10 +131,6 @@ export interface LayoutFooter extends Struct.ComponentSchema {
     displayName: 'Footer';
   };
   attributes: {
-    categories: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::category.category'
-    >;
     footerLogo: Schema.Attribute.Component<'layout.logo', false>;
     legalLinks: Schema.Attribute.Component<'links.link', true>;
     menuLinks: Schema.Attribute.Component<'links.link', true>;
