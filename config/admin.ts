@@ -1,5 +1,8 @@
 export default ({ env }) => ({
   auth: {
+    options: {
+      expiresIn: '7d',
+    },
     secret: env('ADMIN_JWT_SECRET'),
   },
   apiToken: {
