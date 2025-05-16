@@ -1,3 +1,5 @@
+console.log('✅ middlewares.ts loaded');
+
 module.exports = [
   {
     name: 'strapi::security',
